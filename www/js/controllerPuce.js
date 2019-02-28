@@ -1,4 +1,4 @@
-app.controller('PuceCtrl', function($scope, $stateParams, monApi) {
+app.controller('PuceCtrl', function($scope, $stateParams, $state, monApi) {
 
   // get route url parameters
   $scope.idPays = $stateParams.idPays;
@@ -10,5 +10,10 @@ app.controller('PuceCtrl', function($scope, $stateParams, monApi) {
 
   // start API request
   monApi.get('/alpha/' + $scope.idPays);
+
+  // onTouch function
+  $scope.retour = function () {
+    $state.go("app.puces");
+  };
 
 });

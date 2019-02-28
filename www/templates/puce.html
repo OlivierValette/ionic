@@ -1,5 +1,5 @@
 <ion-view view-title="{{pays.alpha3Code}}">
-  <ion-content>
+  <ion-content padding="true">
     <h1>{{pays.name}}</h1>
     <ion-list class="list-inset">
       <ion-item>Capitale : {{pays.capital}}</ion-item>
@@ -11,5 +11,6 @@
       <ion-item>Longitude : {{pays.latlng[1]}}</ion-item>
       <img class="full-image" src="{{pays.flag}}">
     </ion-list>
+    <button on-touch="retour()" class="button">Retour</button>
   </ion-content>
 </ion-view>
