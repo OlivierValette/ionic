@@ -1,0 +1,15 @@
+<ion-view view-title="{{pays.alpha3Code}}">
+  <ion-content>
+    <h1>{{pays.name}}</h1>
+    <ion-list class="list-inset">
+      <ion-item>Capitale : {{pays.capital}}</ion-item>
+      <ion-item>Région : {{pays.region}}</ion-item>
+      <ion-item>Sous-région : {{pays.subregion}}</ion-item>
+      <ion-item>Population : {{pays.population}} (hab.)</ion-item>
+      <ion-item>Monnaie : {{pays.currencies[0].name}} ({{pays.currencies[0].symbol}})</ion-item>
+      <ion-item>Latitude : {{pays.latlng[0]}}</ion-item>
+      <ion-item>Longitude : {{pays.latlng[1]}}</ion-item>
+      <img class="full-image" src="{{pays.flag}}">
+    </ion-list>
+  </ion-content>
+</ion-view>
